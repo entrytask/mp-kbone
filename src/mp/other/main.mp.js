@@ -3,21 +3,21 @@ import Router from 'vue-router'
 import { sync } from 'vuex-router-sync'
 import App from '../../App.vue'
 import store from '../../store'
-import List from '../../list/Index.vue'
-import Detail from '../../detail/Index.vue'
+import Network from '../../views/Network.vue'
+import Client from '../../views/Client.vue'
 
 Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
   routes: [{
-    path: '/test/list/:id',
-    name: 'List',
-    component: List,
+    path: '/network',
+    name: 'networkConfig',
+    component: Network,
   }, {
-    path: '/test/detail/:id',
-    name: 'Detail',
-    component: Detail,
+    path: '/client',
+    name: 'clientConfig',
+    component: Client,
   }],
 })
 

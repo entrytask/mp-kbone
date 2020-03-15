@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <p>{{headerTips}} {{input}}</p>
+    <h3>Benchmark Platform</h3>
   </div>
 </template>
 

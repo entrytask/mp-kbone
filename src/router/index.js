@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Home = () => import(/* webpackChunkName: "Home" */'@/home/Index.vue')
-const List = () => import(/* webpackChunkName: "List" */'@/list/Index.vue')
-const Detail = () => import(/* webpackChunkName: "Detail" */'@/detail/Index.vue')
+const Home = () => import('@/home/Index.vue')
+const Network = () => import('@/views/Network.vue')
+const Client = () => import('@/views/Client.vue')
 
 Vue.use(Router)
 
@@ -22,12 +22,12 @@ export default new Router({
     name: 'HomeTest',
     component: Home,
   }, {
-    path: '/test/list/:id',
-    name: 'List',
-    component: List,
+    path: '/network',
+    name: 'networkConfig',
+    component: Network,
   }, {
-    path: '/test/detail/:id',
-    name: 'Detail',
-    component: Detail,
+    path: '/client',
+    name: 'clientConfig',
+    component: Client,
   }],
 })
